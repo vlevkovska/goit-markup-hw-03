@@ -38,6 +38,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -74,11 +76,9 @@ img {
 
 /* ===========HEADER========== */
 .page-header {
-  display: flex;
-  align-items: center;
-  background-color: #ccc;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 .navigation {
   display: flex;
@@ -91,7 +91,7 @@ img {
   display: flex;
   align-items: center;
 }
-.navigation-list a {
+.navigation-link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -109,6 +109,8 @@ img {
 }
 .hero {
   background-color: var(--hero-color);
+  width: 1600px;
+  margin: 0 auto;
 }
 
 /*Навигация*/
@@ -153,13 +155,16 @@ img {
 
 .main-title {
   font-size: 44px;
-  font-weight: 900;
+  font-weight: 900px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button-order {
   border-radius: 4px;
@@ -182,12 +187,25 @@ img {
   padding-bottom: 47px;
 }
 
+.about-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+.about-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .benefits-list-title {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .benefits {
   font-size: 14px;
@@ -208,6 +226,17 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.occupation-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+.occupation-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 h2 {
   font-size: 36px;
   font-weight: 700;
@@ -218,6 +247,21 @@ h2 {
 }
 .team-members {
   display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+.members-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.members-list-item img {
+  margin-bottom: 30px;
 }
 .members {
   font-size: 16px;
@@ -225,6 +269,7 @@ h2 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 .profession {
   font-size: 16px;
@@ -235,12 +280,30 @@ h2 {
 }
 
 /*Portfolio*/
+.examples {
+  padding-top: 118px;
+}
+.button-set {
+  display: flex;
+  justify-content: center;
+}
+.button-list {
+  margin-right: 8px;
+}
 .button-filter {
+  border-radius: 4px;
+  min-width: 73px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
+  border: none;
+  display: block;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 body .button-filter:hover,
@@ -250,23 +313,55 @@ body .button-filter:active {
   color: var(--background-color);
   cursor: pointer;
 }
+/* CARD SET */
+.card-thumb {
+  margin-top: 60px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.card-item {
+  flex-basis: calc(100% / 3 - 30px);
+  border: 1px solid rgba(238, 238, 238, 1);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .title-examples {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .tipe-examples {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-top: 4px;
+  margin-left: 24px;
 }
 /*Footer*/
 .page-footer {
   background-color: var(--hero-color);
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.adress {
+  margin-top: 20px;
+}
 .logo-footer {
   color: var(--background-color);
+}
+.footer-list {
+  height: 21px;
+  line-height: 1.5;
+  margin-bottom: 9px;
 }
 .kontakt-link:hover,
 .kontakt-link:focus {
