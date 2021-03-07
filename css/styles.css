@@ -149,8 +149,15 @@ img {
 
 /*Hero*/
 
-.hero {
+/* .hero {
   padding: 252px 200px;
+} */
+.hero-title {
+height: 600px;
+width: 1200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .main-title {
@@ -283,8 +290,8 @@ h2 {
 
 /*Portfolio*/
 .examples {
-  padding-top: 118px;
-  padding-bottom: 51px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .button-set {
   display: flex;
@@ -349,11 +356,10 @@ body .button-filter:active {
 /*Footer*/
 .page-footer {
   background-color: var(--hero-color);
-}
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .adress {
   margin-top: 20px;
 }
